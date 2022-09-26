@@ -50,7 +50,8 @@
 #     s //= 2
 # print(chislo)
 
-
+s = input()
+print(s[2], s[-2], s[0:5], s[0:-2])
 
 
 
