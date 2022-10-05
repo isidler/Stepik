@@ -57,14 +57,14 @@
 # pol = int((len(s) + 1) / 2)
 # print(s[pol:] + s[:pol])
 
+# s = input()
+# if s == s.title():
+#     print('YES')
+# else:
+#     print('NO')
 
-s = 'one'
-print(s[0])
-print(s[1])
-
-
-
-
+s = input()
+print(s.swapcase())
 
 
 
