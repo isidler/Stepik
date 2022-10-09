@@ -63,15 +63,25 @@
 # else:
 #     print('NO')
 
-s = input()
-print(s.swapcase())
+# s = input()
+# print(s.swapcase())
 
+# s = input()
+# if 'хорош' in s.lower():
+#     print('YES')
+# else:
+#     print('NO')
+# print('YES' if 'хорош' in input().lower() else 'NO')
 
+# s = input()
+# count = 0
+# for i in range(len(s)):
+#     if "a" <= s[i] <= "z":
+#         count +=1
+# print(count)
+# print(sum(s.islower() for s in input()))
 
-
-
-
-
+print(sum(s.islower() for s in input()))
 
 
 

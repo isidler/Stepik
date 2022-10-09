@@ -1,0 +1,8 @@
+#!/bin/bash
+
+a="-tt -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1."
+
+{ sleep 2; echo "show clock"; sleep 1; echo "exit" ; } | ssh echo $a 1
+#{ sleep $son; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.6
+#{ sleep $son; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.73
+#{ sleep $son; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.74
