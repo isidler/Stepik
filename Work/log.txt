@@ -1,0 +1,386 @@
+CISCO
+
+
+Служба ИТ
+Коммутатор
+СВ221
+
+
+SW-CB221#show clock
+ 15:44:01    Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB221#exit
+
+
+Служба ИТ
+Коммутатор
+S1-CLN
+
+
+switch7c4bcc#show clock
+*00:22:25    Mar 12 2015
+Time source is sntp
+Time from Browser is disabled
+switch7c4bcc#exit
+
+
+Служба ИТ
+Коммутатор
+СВ331
+
+
+SW-CB331#show clock
+ 15:44:59    Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB331#exit
+
+
+Служба ИТ
+Коммутатор
+СВ332
+
+
+SW-CB332#show clock
+ 15:45:57    Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB332#exit
+
+
+Служба ИТ
+Коммутатор
+СВ352
+
+
+SW-CB352#show clock
+ 15:49:37    Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB352#exit
+
+
+Служба ИТ
+Коммутатор
+CB551 (корпус 23)
+
+
+SW-CB551#show clock
+ 15:44:03    Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB551#exit
+
+
+Служба ИТ
+Коммутатор
+CB311
+
+
+SW-CB311#show clock
+ 15:45:14    Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB311#exit
+
+
+Служба ИТ
+Коммутатор
+CB541
+
+
+SW-CB541#show clock
+*18:30:15    Jan 6 2014
+Time source is sntp
+Time from Browser is disabled
+SW-CB541#exit
+
+
+Служба ИТ
+Коммутатор
+CB531
+
+
+SW-CB531#show clock
+*18:30:32    Jan 6 2014
+Time source is sntp
+Time from Browser is disabled
+SW-CB531#exit
+
+
+Служба ИТ
+Коммутатор
+CB411
+
+
+SW-CB411#show clock
+ 15:44:15    Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB411#exit
+
+
+Служба ИТ
+Коммутатор
+CB532
+
+
+
+SW-CB532#show clock
+*18:30:07    Jan 6 2014
+Time source is sntp
+Time from Browser is disabled
+SW-CB532#exit
+
+
+Служба ИТ
+Коммутатор
+CB431 (корпус 23)
+
+
+SW-CB431#show clock
+ 15:43:59    Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB431#exit
+show clock
+exit
+ 
+ELTEX
+
+
+
+
+SW-CB342B#show clock
+ 15:38:38 UTC+3 Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB342B#
+
+
+
+SW-CB341B#show clock
+*19:01:24 UTC+3 Jun 22 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB341B#
+
+
+
+SW-CB342A#show clock
+ 15:43:42 UTC+3 Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB342A#
+
+
+
+SWT-CB341B#show clock
+ 15:43:45 UTC+3 Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SWT-CB341B#
+
+
+
+SWT-CB342A#show clock
+ 15:43:48 UTC+3 Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SWT-CB342A#
+
+
+
+SWT-CB342B#show clock
+ 15:43:51 UTC+3 Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SWT-CB342B#
+
+
+
+SW-CB322#show clock
+ 15:43:53 UTC+3 Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB322#
+
+
+
+SW-CB341A#show clock
+ 15:43:57 UTC+3 Oct 9 2022
+Time source is sntp
+Time from Browser is disabled
+SW-CB341A# 
+HUAWEI
+
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:44:12+03:00.
+<SWT-CB321>display clock
+2022-10-09 15:44:13+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<SWT-CB321>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0.
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:44:26+03:00.
+<SWT-CB322>display clock
+2022-10-09 15:44:27+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<SWT-CB322>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0.
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:44:55+03:00.
+<SWT-CB351>display clock
+2022-10-09 15:44:56+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<SWT-CB351>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0.
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:45:09+03:00.
+<SWT-CB341A>display clock
+2022-10-09 15:45:10+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<SWT-CB341A>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0.
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:45:19+03:00.
+<Gateway>display clock
+2022-10-09 15:45:24+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<Gateway>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0.
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:45:39+03:00.
+Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+<SWT-CB231>display clock
+2022-10-09 15:45:39+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<SWT-CB231>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0.
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:45:53+03:00.
+Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+<SWT-CB222>display clock
+2022-10-09 15:45:53+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<SWT-CB222>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0.
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:46:07+03:00.
+Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+<SW-CB323A>display clock
+2022-10-09 15:46:07+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<SW-CB323A>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0.
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:46:22+03:00.
+Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+<SW-CB323B>display clock
+2022-10-09 15:46:22+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<SW-CB323B>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0.
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:46:34+03:00.
+Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+<SW-CB222>display clock
+2022-10-09 15:46:35+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<SW-CB222>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0.
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:46:49+03:00.
+Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+<SW-CB231>display clock
+2022-10-09 15:46:49+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<SW-CB231>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0.
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 1.
+      The current login time is 2022-10-09 15:47:05+03:00.
+Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
+<SW-CB321>display clock
+2022-10-09 15:47:05+03:00
+Sunday
+Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
+<SW-CB321>quit
+Info: The max number of VTY users is 10, and the number
+      of current VTY users on line is 0. 
+SNR
+ 
+SNR
+SWT-CB211#show clock
+Current time is Sun Oct 09 15:48:40 2022 [WORD+03:00]
+SWT-CB211#exit
+SWT-CB353#show clock
+Current time is Sun Oct 09 15:48:45 2022 [Moscow+03:00]
+SWT-CB353#exit
+SWT-CB352#show clock
+Current time is Sun Oct 09 15:48:48 2022 [Moscow+03:00]
+SWT-CB352#exit
+SWT-CB221#show clock
+Current time is Sun Oct 09 15:48:50 2022 [Moscow+03:00]
+SWT-CB221#exit
+SWT-CB521#show clock
+Current time is Sun Oct 09 15:48:54 2022 [Moscow+03:00]
+SWT-CB521#exit
+SWT-CB24#show clock
+Current time is Sun Oct 09 15:48:57 2022 [Moscow+03:00]
+SWT-CB24#exit
+SWT-CB311#show clock
+Current time is Sun Oct 09 15:49:00 2022 [Moscow+03:00]
+SWT-CB311#exit
+SWT-CB511#show clock
+Current time is Sun Oct 09 15:49:03 2022 [WORD+03:00]
+SWT-CB511#exit
+SWT-CB412#show clock
+Current time is Sun Oct 09 15:49:06 2022 [WORD+03:00]
+SWT-CB412#exit
+SWT-CB431#show clock
+Current time is Sun Oct 09 15:49:10 2022 [WORD+03:00]
+SWT-CB431#exit
+SWT-CB532#show clock
+Current time is Sun Oct 09 15:49:13 2022 [word+03:00]
+SWT-CB532#exit
+SWT-CB411#show clock
+Current time is Wed Mar 29 22:28:50 2006 [UTC]
+SWT-CB411#exit
+SWT-CB541#show clock
+Current time is Sun Oct 09 15:49:19 2022 [word+03:00]
+SWT-CB541#exit

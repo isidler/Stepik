@@ -1,12 +1,30 @@
 #!/bin/bash
-komanda=(
-"{ sleep 2; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.1"
-"{ sleep 2; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.6"
-"{ sleep 2; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.73"
-"{ sleep 2; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.74"
-)
-let nomer=1
-for i in ${komanda[@]}; do
-  echo "$nomer$i"
-  let nomer=nomer+1
-done
+#komanda=(
+#"{ sleep 2; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.1"
+#"{ sleep 2; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.6"
+#"{ sleep 2; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.73"
+#"{ sleep 2; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.74"
+#)
+#let nomer=1
+#for i in ${komanda[@]}; do
+#  echo "$nomer$i"
+#  let nomer=nomer+1
+#done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
