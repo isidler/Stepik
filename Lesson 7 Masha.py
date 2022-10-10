@@ -5,5 +5,13 @@
 #     if a2 <= b1 <= b2:
 #         print(b1)
 
-print("Hello world")
+# print("Hello world")
 
+num = int(input())
+while num > 0:
+    num = num % 10
+    num = num // 10
+    x = min(num)
+    y = max(num)
+print('Наименьшее число', '=', x)
+print('Наибольшее число', '=', y)
