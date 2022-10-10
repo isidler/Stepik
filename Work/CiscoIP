@@ -1,0 +1,49 @@
+#!/bin/bash
+#komanda=()
+#let nomer=1
+#for i in ${komanda[@]}; do
+#  echo "$nomer$i"
+#  let nomer=nomer+1
+#done
+co="echo 'conf'"
+v="echo 'interface vl 1'"
+x="echo 'exit'"
+rout="echo 'ip route 0.0.0.0 0.0.0.0 172.16.1.3'"
+rout2="echo 'ip route 172.16.1.0 0.0.0.0 172.18.1.3"
+nom=61
+
+echo 'Cisco IP from 61 to 64'
+diap=(1	6	73	74)
+for b in ${diap[@]}; do
+  a="-tt -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.$b"
+  # Подключиться, добавить IP из другой маски, добавить маршруты
+  { sleep 2; eval $co; sleep 1 ; eval $v ; sleep 1 ; echo "ip address 172.16.1.$nom 255.255.255.0" ; eval $x ; eval $rout ; eval $rout2 ; eval $x ; eval $x ; } | ssh $a
+  # Подключиться, удалить старый IP, добавить новый из 24 маски
+  { sleep 2; eval $co; sleep 1 ; eval $v ; sleep 1 ; echo "ip address 172.18.1.$nom 255.255.255.0" ; eval $x ; eval $rout ; eval $rout2 ; eval $x ; eval $x ; } | ssh $a
+  n=n+1
+done
+n=n+1
+echo 'Cisco IP from 66 to 73'
+diap=(78	79	80	82	83	84	85	86)
+for b in ${diap[@]}; do
+  a="-tt -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.$b"
+  { sleep 2; eval $co; sleep 1 ; eval $v ; sleep 1 ; echo "ip address 172.16.1.$nom 255.255.255.0" ; eval $x ; eval $rout ; } | ssh $a
+    n=n+1
+done
+
+echo 'Cisco IP 74'
+a="-tt -c aes256-ctr -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.89"
+  { sleep 2; eval $co; sleep 1 ; eval $v ; sleep 1 ; echo "ip address 172.16.1.$nom 255.255.255.0" ; eval $x ; eval $rout ; } | ssh $a
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+komanda=(5 8 8 4)
+let nomer=1
+for i in ${komanda[@]}; do
+  echo "$nomer $i"
+  let nomer=nomer+1
+done

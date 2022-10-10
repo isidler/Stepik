@@ -1,8 +1,9 @@
 #!/bin/bash
 
-a="-tt -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1."
-
-{ sleep 2; echo "show clock"; sleep 1; echo "exit" ; } | ssh echo $a 1
-#{ sleep $son; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.6
-#{ sleep $son; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.73
-#{ sleep $son; echo "show clock"; sleep 1; echo "exit" ; } | ssh -tt -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.74
+a="echo 'conf'"
+b="echo 'sys'"
+v="echo 'interface vl 1'"
+x="echo 'exit'"
+q="echo 'quit'"
+{ sleep 2; eval $a; sleep 1 ; eval $v ; sleep 1 ; echo "ip address 172.16.1.61 255.255.255.0" ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.1
+{ sleep 2 ; eval $x ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.61

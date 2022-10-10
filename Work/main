@@ -1,5 +1,11 @@
 #!/bin/bash
 
+a="echo 'conf'"
+b="echo 'sys'"
+v="echo 'interface vl 1'"
+x="echo 'exit'"
+q="echo 'quit'"
+
 { sleep 2; eval $a; sleep 1 ; eval $v ; sleep 1 ; echo "ip address 172.16.1.61 255.255.255.0" ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.1
 { sleep 2; eval $a; sleep 1 ; eval $v ; sleep 1 ; echo "ip address 172.16.1.62 255.255.255.0" ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.6
 { sleep 2; eval $a; sleep 1 ; eval $v ; sleep 1 ; echo "ip address 172.16.1.63 255.255.255.0" ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.73
@@ -13,6 +19,10 @@
 { sleep 2; eval $a; sleep 1 ; eval $v ; sleep 1 ; echo "ip address 172.16.1.72 255.255.255.0" ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.85
 { sleep 2; eval $a; sleep 1 ; eval $v ; sleep 1 ; echo "ip address 172.16.1.73 255.255.255.0" ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-cbc -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.86
 { sleep 2; eval $a; sleep 1 ; eval $v ; sleep 1 ; echo "ip address 172.16.1.74 255.255.255.0" ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; sleep 1 ; eval $x ; } | ssh -tt -i /mnt/d/SSH/switches_openssh -c aes256-ctr -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group-exchange-sha1  admin@172.16.1.89
+
+read
+
+
 
 echo ' '
 echo 'ELTEX'
