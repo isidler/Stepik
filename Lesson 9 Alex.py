@@ -82,7 +82,7 @@
 # print(sum(s.islower() for s in input()))
 
 print(sum(s.islower() for s in input()))
-
+123
 
 
 
