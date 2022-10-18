@@ -26,5 +26,6 @@ for b in ${diap[@]}; do
   fi
 done
 
-echo 'Cisco IP 89'
-echo "172.16.1.$nom"
+#echo 'Cisco IP 89'
+#echo "172.16.1.$nom"
+asdf

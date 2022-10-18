@@ -28,4 +28,3 @@ a="-tt -c aes256-ctr -o PubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh
 
 
 
-
