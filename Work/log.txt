@@ -1,386 +1,308 @@
-CISCO
+sid@PC2099:/mnt/d/P38/Projects/Stepik/work$ ./CiscoIP
+Cisco IP from 61 to 86
 
-
+
 Служба ИТ
-Коммутатор
-СВ221
-
+Коммутатор
+СВ221
 
-SW-CB221#show clock
- 15:44:01    Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
+
+SW-CB221#conf
+SW-CB221(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+SW-CB221(config)#ip default-gateway 172.16.1.3
+SW-CB221(config)#interface vl 1
+SW-CB221(config-if)#ip address 172.16.1.61 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB221(config-if)#exit
+SW-CB221(config)#exit
+SW-CB221#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:33:02 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:33:06 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 SW-CB221#exit
-
-
-Служба ИТ
-Коммутатор
-S1-CLN
-
+Connection to 172.16.1.1 closed.
 
-switch7c4bcc#show clock
-*00:22:25    Mar 12 2015
-Time source is sntp
-Time from Browser is disabled
+
+conf
+Служба ИТ
+Коммутатор
+S1-CLN
+
+
+switch7c4bcc#switch7c4bcc(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+switch7c4bcc(config)#ip default-gateway 172.16.1.3
+switch7c4bcc(config)#interface vl 1
+switch7c4bcc(config-if)#ip address 172.16.1.62 255.255.255.0
+Duplicated IP interface on the same subnet.
+switch7c4bcc(config-if)#exit
+switch7c4bcc(config)#exit
+switch7c4bcc#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+20-Mar-2015 00:12:46 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+20-Mar-2015 00:12:50 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 switch7c4bcc#exit
-
-
-Служба ИТ
-Коммутатор
-СВ331
-
+Connection to 172.16.1.6 closed.
 
-SW-CB331#show clock
- 15:44:59    Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
+
+Служба ИТ
+Коммутатор
+СВ331
+
+
+SW-CB331#conf
+SW-CB331(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+SW-CB331(config)#ip default-gateway 172.16.1.3
+Entry already exists
+SW-CB331(config)#interface vl 1
+SW-CB331(config-if)#ip address 172.16.1.63 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB331(config-if)#exit
+SW-CB331(config)#exit
+SW-CB331#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:35:19 %AAA-I-CONNECT: User CLI session for user admin over ssh , source 172.16.11.99 destination  172.16.1.73 ACCEPTED, aggregated (1)
+17-Oct-2022 15:35:22 %NT_GREEN-W-EeeLldpSingleNeighbour: Single LLDP neighbour on port gi3 - EEE operational state can be TRUE, aggregated (1)
+17-Oct-2022 15:35:22 %NT_GREEN-W-EeeLldpMultiNeighbours: Multiple LLDP neighbours on port gi3 - EEE operational state is FALSE, aggregated (1)
+17-Oct-2022 15:35:27 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:35:31 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 SW-CB331#exit
-
-
-Служба ИТ
-Коммутатор
-СВ332
-
+Connection to 172.16.1.73 closed.
+Warning: Permanently added '172.16.1.74' (RSA) to the list of known hosts.
 
-SW-CB332#show clock
- 15:45:57    Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
+conf
+
+Служба ИТ
+Коммутатор
+СВ332
+
+
+SW-CB332#SW-CB332(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+SW-CB332(config)#ip default-gateway 172.16.1.3
+SW-CB332(config)#interface vl 1
+SW-CB332(config-if)#ip address 172.16.1.64 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB332(config-if)#exit
+SW-CB332(config)#exit
+SW-CB332#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:36:35 %NT_GREEN-W-EeeLldpSingleNeighbour: Single LLDP neighbour on port gi17 - EEE operational state can be TRUE, aggregated (2)
+17-Oct-2022 15:36:35 %NT_GREEN-W-EeeLldpMultiNeighbours: Multiple LLDP neighbours on port gi17 - EEE operational state is FALSE, aggregated (2)
+17-Oct-2022 15:36:40 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:36:42 %NT_GREEN-W-EeeLldpSingleNeighbour: Single LLDP neighbour on port gi10 - EEE operational state can be TRUE, aggregated (1)
+17-Oct-2022 15:36:42 %NT_GREEN-W-EeeLldpMultiNeighbours: Multiple LLDP neighbours on port gi10 - EEE operational state is FALSE, aggregated (1)
+17-Oct-2022 15:36:43 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 SW-CB332#exit
-
-
-Служба ИТ
-Коммутатор
-СВ352
-
+Connection to 172.16.1.74 closed.
+Warning: Permanently added '172.16.1.78' (RSA) to the list of known hosts.
 
-SW-CB352#show clock
- 15:49:37    Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
+
+Служба ИТ
+Коммутатор
+СВ352
+
+
+SW-CB352#conf
+SW-CB352(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+SW-CB352(config)#ip default-gateway 172.16.1.3
+SW-CB352(config)#interface vl 1
+SW-CB352(config-if)#ip address 172.16.1.66 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB352(config-if)#exit
+SW-CB352(config)#exit
+SW-CB352#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:40:35 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:40:39 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 SW-CB352#exit
-
-
-Служба ИТ
-Коммутатор
-CB551 (корпус 23)
-
+Connection to 172.16.1.78 closed.
+Warning: Permanently added '172.16.1.79' (RSA) to the list of known hosts.
+conf
 
-SW-CB551#show clock
- 15:44:03    Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
+
+Служба ИТ
+Коммутатор
+CB551 (корпус 23)
+
+
+SW-CB551#SW-CB551(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+SW-CB551(config)#ip default-gateway 172.16.1.3
+SW-CB551(config)#interface vl 1
+SW-CB551(config-if)#ip address 172.16.1.67 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB551(config-if)#exit
+SW-CB551(config)#exit
+SW-CB551#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:35:11 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:35:14 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 SW-CB551#exit
-
-
-Служба ИТ
-Коммутатор
-CB311
-
+Connection to 172.16.1.79 closed.
+Warning: Permanently added '172.16.1.80' (RSA) to the list of known hosts.
 
-SW-CB311#show clock
- 15:45:14    Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
+
+Служба ИТ
+Коммутатор
+CB311
+
+
+SW-CB311#conf
+SW-CB311(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+SW-CB311(config)#ip default-gateway 172.16.1.3
+SW-CB311(config)#interface vl 1
+SW-CB311(config-if)#ip address 172.16.1.68 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB311(config-if)#exit
+SW-CB311(config)#exit
+SW-CB311#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:36:32 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:36:35 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 SW-CB311#exit
-
-
-Служба ИТ
-Коммутатор
-CB541
-
+Connection to 172.16.1.80 closed.
+Warning: Permanently added '172.16.1.82' (RSA) to the list of known hosts.
 
-SW-CB541#show clock
-*18:30:15    Jan 6 2014
-Time source is sntp
-Time from Browser is disabled
+conf
+
+Служба ИТ
+Коммутатор
+CB541
+
+
+SW-CB541#SW-CB541(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+SW-CB541(config)#ip default-gateway 172.16.1.3
+SW-CB541(config)#interface vl 1
+SW-CB541(config-if)#ip address 172.16.1.69 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB541(config-if)#exit
+SW-CB541(config)#exit
+SW-CB541#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:34:51 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:34:55 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 SW-CB541#exit
-
-
-Служба ИТ
-Коммутатор
-CB531
-
+Connection to 172.16.1.82 closed.
+Warning: Permanently added '172.16.1.83' (RSA) to the list of known hosts.
 
-SW-CB531#show clock
-*18:30:32    Jan 6 2014
-Time source is sntp
-Time from Browser is disabled
+
+Служба ИТ
+Коммутатор
+CB531
+
+
+SW-CB531#conf
+SW-CB531(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+SW-CB531(config)#ip default-gateway 172.16.1.3
+SW-CB531(config)#interface vl 1
+SW-CB531(config-if)#ip address 172.16.1.70 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB531(config-if)#exit
+SW-CB531(config)#exit
+SW-CB531#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:35:07 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:35:11 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 SW-CB531#exit
-
-
-Служба ИТ
-Коммутатор
-CB411
-
+Connection to 172.16.1.83 closed.
+Warning: Permanently added '172.16.1.84' (RSA) to the list of known hosts.
 
-SW-CB411#show clock
- 15:44:15    Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
+
+Служба ИТ
+Коммутатор
+CB411
+
+
+SW-CB411#conf
+SW-CB411(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+SW-CB411(config)#ip default-gateway 172.16.1.3
+SW-CB411(config)#interface vl 1
+SW-CB411(config-if)#ip address 172.16.1.71 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB411(config-if)#exit
+SW-CB411(config)#exit
+SW-CB411#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:35:20 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:35:24 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 SW-CB411#exit
-
-
-Служба ИТ
-Коммутатор
-CB532
-
-
+Connection to 172.16.1.84 closed.
+Warning: Permanently added '172.16.1.85' (RSA) to the list of known hosts.
 
-SW-CB532#show clock
-*18:30:07    Jan 6 2014
-Time source is sntp
-Time from Browser is disabled
+conf
+
+Служба ИТ
+Коммутатор
+CB532
+
+
+
+SW-CB532#SW-CB532(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+SW-CB532(config)#ip default-gateway 172.16.1.3
+SW-CB532(config)#interface vl 1
+SW-CB532(config-if)#ip address 172.16.1.72 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB532(config-if)#exit
+SW-CB532(config)#exit
+SW-CB532#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:35:35 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:35:39 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 SW-CB532#exit
-
-
+Connection to 172.16.1.85 closed.
+Warning: Permanently added '172.16.1.86' (RSA) to the list of known hosts.
+conf
+
+
 Служба ИТ
-Коммутатор
-CB431 (корпус 23)
-
+Коммутатор
+CB431 (корпус 23)
 
-SW-CB431#show clock
- 15:43:59    Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
+
+SW-CB431#SW-CB431(config)#ip route 172.16.0.0 255.255.0.0 172.16.1.3
+SW-CB431(config)#ip default-gateway 172.16.1.3
+SW-CB431(config)#interface vl 1
+SW-CB431(config-if)#ip address 172.16.1.73 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB431(config-if)#exit
+SW-CB431(config)#exit
+SW-CB431#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:35:48 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:35:52 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
 SW-CB431#exit
-show clock
-exit
- 
-ELTEX
-
-
-
-
-SW-CB342B#show clock
- 15:38:38 UTC+3 Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
-SW-CB342B#
-
+Connection to 172.16.1.86 closed.
+Cisco IP 89
+Warning: Permanently added '172.16.1.89' (RSA) to the list of known hosts.
+conf
+ip route 172.16.0.0 255.255.0.0 172.16.1.3
+ip default-gateway 172.16.1.3
 
 
-SW-CB341B#show clock
-*19:01:24 UTC+3 Jun 22 2022
-Time source is sntp
-Time from Browser is disabled
-SW-CB341B#
-
+Служба ИТ
+Коммутатор
+CB33
 
 
-SW-CB342A#show clock
- 15:43:42 UTC+3 Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
-SW-CB342A#
-
-
-
-SWT-CB341B#show clock
- 15:43:45 UTC+3 Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
-SWT-CB341B#
-
-
-
-SWT-CB342A#show clock
- 15:43:48 UTC+3 Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
-SWT-CB342A#
-
-
-
-SWT-CB342B#show clock
- 15:43:51 UTC+3 Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
-SWT-CB342B#
-
-
-
-SW-CB322#show clock
- 15:43:53 UTC+3 Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
-SW-CB322#
-
-
-
-SW-CB341A#show clock
- 15:43:57 UTC+3 Oct 9 2022
-Time source is sntp
-Time from Browser is disabled
-SW-CB341A# 
-HUAWEI
-
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:44:12+03:00.
-<SWT-CB321>display clock
-2022-10-09 15:44:13+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<SWT-CB321>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0.
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:44:26+03:00.
-<SWT-CB322>display clock
-2022-10-09 15:44:27+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<SWT-CB322>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0.
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:44:55+03:00.
-<SWT-CB351>display clock
-2022-10-09 15:44:56+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<SWT-CB351>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0.
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:45:09+03:00.
-<SWT-CB341A>display clock
-2022-10-09 15:45:10+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<SWT-CB341A>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0.
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:45:19+03:00.
-<Gateway>display clock
-2022-10-09 15:45:24+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<Gateway>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0.
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:45:39+03:00.
-Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
-<SWT-CB231>display clock
-2022-10-09 15:45:39+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<SWT-CB231>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0.
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:45:53+03:00.
-Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
-<SWT-CB222>display clock
-2022-10-09 15:45:53+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<SWT-CB222>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0.
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:46:07+03:00.
-Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
-<SW-CB323A>display clock
-2022-10-09 15:46:07+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<SW-CB323A>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0.
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:46:22+03:00.
-Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
-<SW-CB323B>display clock
-2022-10-09 15:46:22+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<SW-CB323B>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0.
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:46:34+03:00.
-Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
-<SW-CB222>display clock
-2022-10-09 15:46:35+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<SW-CB222>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0.
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:46:49+03:00.
-Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
-<SW-CB231>display clock
-2022-10-09 15:46:49+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<SW-CB231>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0.
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 1.
-      The current login time is 2022-10-09 15:47:05+03:00.
-Info: Smart-upgrade is currently disabled. Enable Smart-upgrade to get recommended version information.
-<SW-CB321>display clock
-2022-10-09 15:47:05+03:00
-Sunday
-Time Zone(Moscow,St.Petersburg,Volgograd) : UTC+03:00
-<SW-CB321>quit
-Info: The max number of VTY users is 10, and the number
-      of current VTY users on line is 0. 
-SNR
- 
-SNR
-SWT-CB211#show clock
-Current time is Sun Oct 09 15:48:40 2022 [WORD+03:00]
-SWT-CB211#exit
-SWT-CB353#show clock
-Current time is Sun Oct 09 15:48:45 2022 [Moscow+03:00]
-SWT-CB353#exit
-SWT-CB352#show clock
-Current time is Sun Oct 09 15:48:48 2022 [Moscow+03:00]
-SWT-CB352#exit
-SWT-CB221#show clock
-Current time is Sun Oct 09 15:48:50 2022 [Moscow+03:00]
-SWT-CB221#exit
-SWT-CB521#show clock
-Current time is Sun Oct 09 15:48:54 2022 [Moscow+03:00]
-SWT-CB521#exit
-SWT-CB24#show clock
-Current time is Sun Oct 09 15:48:57 2022 [Moscow+03:00]
-SWT-CB24#exit
-SWT-CB311#show clock
-Current time is Sun Oct 09 15:49:00 2022 [Moscow+03:00]
-SWT-CB311#exit
-SWT-CB511#show clock
-Current time is Sun Oct 09 15:49:03 2022 [WORD+03:00]
-SWT-CB511#exit
-SWT-CB412#show clock
-Current time is Sun Oct 09 15:49:06 2022 [WORD+03:00]
-SWT-CB412#exit
-SWT-CB431#show clock
-Current time is Sun Oct 09 15:49:10 2022 [WORD+03:00]
-SWT-CB431#exit
-SWT-CB532#show clock
-Current time is Sun Oct 09 15:49:13 2022 [word+03:00]
-SWT-CB532#exit
-SWT-CB411#show clock
-Current time is Wed Mar 29 22:28:50 2006 [UTC]
-SWT-CB411#exit
-SWT-CB541#show clock
-Current time is Sun Oct 09 15:49:19 2022 [word+03:00]
-SWT-CB541#exit
+SW-CB33#SW-CB33(config)#SW-CB33(config)#SW-CB33(config)#interface vl 1
+SW-CB33(config-if)#ip address 172.16.1.74 255.255.255.0
+Duplicated IP interface on the same subnet.
+SW-CB33(config-if)#exit
+SW-CB33(config)#exit
+SW-CB33#write
+Overwrite file [startup-config].... (Y/N)[N] ?Y
+17-Oct-2022 15:37:31 %COPY-I-FILECPY: Files Copy - source URL running-config destination URL flash://startup-config
+17-Oct-2022 15:37:34 %COPY-N-TRAP: The copy operation was completed successfully
+Copy succeeded
+SW-CB33#exit
+Connection to 172.16.1.89 closed.
